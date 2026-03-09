@@ -1,0 +1,39 @@
+# TACMAN — Military RAG System Dependencies
+# Install: pip install -r requirements.txt
+
+# Core AI / RAG
+openai>=1.35.0
+chromadb>=0.5.0
+tiktoken>=0.7.0
+
+# Document Processing
+pypdf>=4.0.0          # PDF text extraction
+
+# OCR (optional — for scanned documents / images)
+pytesseract>=0.3.10   # OCR wrapper (requires tesseract-ocr system package)
+Pillow>=10.0.0        # Image processing
+
+# Terminal UI
+rich>=13.0.0          # Beautiful terminal output
+
+# Environment management
+python-dotenv>=1.0.0  # .env file support
+
+# ─── System Dependencies (install separately) ───────────────────────────────
+# Tesseract OCR (required for scanned docs):
+#   Ubuntu/Debian: sudo apt-get install tesseract-ocr
+#   macOS:         brew install tesseract
+#   Windows:       https://github.com/UB-Mannheim/tesseract/wiki
+#
+# ─── Optional GPU acceleration for embeddings ───────────────────────────────
+# torch>=2.0.0        # Only needed for local embeddings (not used with OpenAI)
+
+
+
+
+#chromadb
+#openai
+#python-dotenv
+#langchain_community
+#langchain_text_splitters
+#pypdf
